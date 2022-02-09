@@ -531,6 +531,7 @@ func runMachineStatus(cmdCtx *cmdctx.CmdContext) error {
 			Vertical: true,
 		},
 		cmdctx.PresenterOption{
+			Title: "Addresses",
 			Presentable: &presenters.MachineIPs{
 				IPAddresses: machine.IPs.Nodes,
 			},
