@@ -1231,7 +1231,8 @@ type DeleteOrganizationMembershipPayload struct {
 }
 
 type MachineEvent struct {
-	Kind      string      `json:"kind"`
-	Timestamp time.Time   `json:"timestamp"`
-	Body      interface{} `json:"body"`
+	ID        string    `jdon:"id"`
+	Kind      string    `json:"kind"`
+	Timestamp time.Time `json:"timestamp"`
+	// Body      interface{} `json:"body"`
 }
